@@ -3,7 +3,6 @@ import requests
 from lxml import etree
 import webbrowser
 from suds.client import Client
-import webbrowser
 
 linea = raw_input("Introduzca una linea: ")
 
@@ -32,26 +31,3 @@ print "Número de incidencias graves: %s" % incigrav2
 print " "
 print "Datos oficiales de TUSSAM."
 
-# los que van bien de frecuencia y el número de incidencias graves de la línea.
-#	raiz = etree.fromstring(respuesta.text.encode("utf-8"))	
-	
-#	city = raiz.find("city")
-#	city.attrib["name"]
-#	tempemin = raiz.find("temperature")
-#	tempemin2 = round(float(tempemin.attrib["min"]),1)
-#	tempemax = raiz.find("temperature")
-#	tempemax2 = round(float(tempemax.attrib["max"]),1)
-#	viento = raiz.find("wind/speed")
-#	viento2 = round(float(viento.attrib["value"]),1)
-#	direccion = raiz.find("wind/direction")
-#	direccion2 = direccion.attrib["code"]
-#	tempe_min.append(tempemin2)
-#	tempe_max.append(tempemax2)
-#	viento_vel.append(viento2)
-#	viento_direc.append(direccion2)
-	
-
-#fichero = open('tiempo.html','w')
-#fichero.write(tiempo)
-#fichero.close()
-#webbrowser.open("tiempo.html")	
