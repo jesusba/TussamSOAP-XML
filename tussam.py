@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import requests
 from lxml import etree
-import webbrowser
 from suds.client import Client
 
 linea = raw_input("Introduzca una linea: ")
