@@ -2,11 +2,13 @@
 import requests
 from lxml import etree
 from suds.client import Client
+import os
+
+os.system("clear")
 
 linea = raw_input("Introduzca una linea: ")
 
 cliente = Client('http://www.infobustussam.com:9001/services/dinamica.asmx?wsdl', retxml=True)
-
 respuesta = cliente.service.GetStatusLinea('%s' % linea)
 
 raiz = etree.fromstring(respuesta.encode("utf-8"))	
